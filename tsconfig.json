@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["es2019", "dom"],
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "outDir": "./tsDist/",
+    "experimentalDecorators": true,
+    "baseUrl": "app",
+     "strict": false,
+    // "strict": true,
+    //    "suppressImplicitAnyIndexErrors": true,
+    "importHelpers": true,
+
+    "paths": {
+      "@services/*": [
+        "services/*"
+      ],
+      "@rest/*": [
+        "services/rest/*"
+      ],
+      "@assets/*": [
+        "assets/*"
+      ],
+      "@myCss": [
+        "assets/styles/main.scss"
+      ],
+      "@pages": [
+        "pages/*"
+      ],
+      "@models": [
+        "models/*"
+      ],
+      "@classes": [
+        "classess/*"
+      ]
+    }
+  },
+
+  "include": [
+    "./**/*"
+  ],
+
+  "exclude": [
+    "node_modules"
+  ],
+
+  "compileOnSave": false,
+
+
+}
+
+
